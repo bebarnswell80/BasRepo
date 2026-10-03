@@ -11,3 +11,12 @@ trim_trailing_whitespace = true
 "headers": {
   "Authorization": "Bearer ${input:github_token}"
 }
+
+"inputs": [
+  {
+    "id": "github_token",
+    "type": "promptString",
+    "description": "GitHub Personal Access Token",
+    "password": true
+  }
+]
